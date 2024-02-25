@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: 'https://dev.kissmyhack.ch',
     methods: 'GET',
-    credentials: true,
+    credentials: false,
   });
 
   const port = process.env.PORT || 3000;

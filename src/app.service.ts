@@ -5,7 +5,6 @@ import * as ical from 'node-ical';
 export class AppService {
   async getEvents() {
     const calendarUrls = [
-      'https://calendar.google.com/calendar/ical/c_6166438be80c6264810dcfa3a6d8b02cc7c209fd66894eb0fa8ce7bb8d82efb2%40group.calendar.google.com/public/basic.ics',
       'https://outlook.office365.com/owa/calendar/cb667b0fc3c64d00ac29c54350fc0304@upsa-vaud.ch/0685cc3456eb4029a13dcc5cb2507003941587491522089634/calendar.ics',
       'https://outlook.office365.com/owa/calendar/cb667b0fc3c64d00ac29c54350fc0304@upsa-vaud.ch/4d8e3809c662407788d7bd53a491891017821783700213908280/calendar.ics',
       'https://outlook.office365.com/owa/calendar/cb667b0fc3c64d00ac29c54350fc0304@upsa-vaud.ch/39834768f9f64608bccc710cecf9053511768132098882597266/calendar.ics',

@@ -44,7 +44,7 @@ export class AppService {
                 const eventEnd = new Date(event.end);
                 if (eventStart <= now && eventEnd >= now) {
                   currentEvent = {
-                    summary: event.summary || 'No title',
+                    summary: event.summary || 'Occupé',
                     start: event.start || 'No start',
                     end: event.end || 'No end',
                   };
@@ -53,7 +53,7 @@ export class AppService {
                   // (nextEvent === null || eventStart < new Date(nextEvent.start))
                 ) {
                   nextEvent = {
-                    summary: event.summary || 'No title',
+                    summary: event.summary || 'Occupé',
                     start: event.start || 'No start',
                     end: event.end || 'No end',
                   };
